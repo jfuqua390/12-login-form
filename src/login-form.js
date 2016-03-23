@@ -9,10 +9,9 @@ export default class LoginForm {
       { username: `admin@google.com`, password: `pandas` },
       { username: email, password: `honeycrisp` },
     ];
-    this.form.addEventListener(`click`, (ev) => {
+    this.form.addEventListener(`submit`, (ev) => {
       ev.preventDefault();
       this.validateInputs();
-
     });
   }
   validate(username, password) {
